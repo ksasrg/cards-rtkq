@@ -13,6 +13,10 @@ const preview: Preview = {
           name: 'black',
           value: '#000',
         },
+        {
+          name: 'white',
+          value: '#fff',
+        },
       ],
     },
     controls: {
