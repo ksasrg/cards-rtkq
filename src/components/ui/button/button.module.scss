@@ -83,7 +83,6 @@
   &:hover:enabled {
     background: var(--color-dark-500);
     box-shadow: 0 0 0 1px var(--color-accent-700);
-
   }
 
   &:active:enabled {
@@ -113,7 +112,6 @@
   &:active:enabled {
     color: var(--color-accent-700);
   }
-
 }
 
 .fullWidth {

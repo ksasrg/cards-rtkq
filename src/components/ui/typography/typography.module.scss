@@ -1,0 +1,58 @@
+@mixin typography($fz, $lh, $fw: --font-weight-regular) {
+  all: inherit;
+  font-size: var($fz);
+  font-weight: var($fw);
+  line-height: var($lh);
+}
+
+.large {
+  @include typography(--font-size-xxl, --line-height-l, --font-weight-bold);
+}
+
+.h1 {
+  @include typography(--font-size-xl, --line-height-l, --font-weight-bold);
+}
+
+.h2 {
+  @include typography(--font-size-l, --line-height-m, --font-weight-bold);
+}
+
+.h3 {
+  @include typography(--font-size-m, --line-height-m, --font-weight-bold);
+}
+
+.body1 {
+  @include typography(--font-size-m, --line-height-m);
+}
+
+.body2 {
+  @include typography(--font-size-s, --line-height-m);
+}
+
+.subtitle1 {
+  @include typography(--font-size-m, --line-height-m, --font-weight-bold);
+}
+
+.subtitle2 {
+  @include typography(--font-size-s, --line-height-m, --font-weight-bold);
+}
+
+.caption {
+  @include typography(--font-size-xs, --line-height-s);
+}
+
+.overline {
+  @include typography(--font-size-xs, --line-height-s, --font-weight-bold);
+}
+
+.link1 {
+  @include typography(--font-size-s, --line-height-m);
+
+  text-decoration-line: underline;
+}
+
+.link2 {
+  @include typography(--font-size-xs, --line-height-s);
+
+  text-decoration-line: underline;
+}
