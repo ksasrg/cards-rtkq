@@ -1,9 +1,4 @@
-/* reset */
-button {
-    all: unset;
-}
-
-.CheckboxRoot {
+.checkbox {
     all: unset;
 
     cursor: pointer;
@@ -59,14 +54,4 @@ button {
             background-image: url("data:image/svg+xml,%3Csvg width='36' height='36' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='18' cy='18' r='18' fill='gray'/%3E%3Cpath fill='%23000' d='M10 12h16v12H10z'/%3E%3Cpath d='M25 9H11a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V11a2 2 0 0 0-2-2Zm-9 14-5-5 1.41-1.41L16 20.17l7.59-7.59L25 14l-9 9Z' fill='%23fff'/%3E%3C/svg%3E");
         }
     }
-}
-
-.Label {
-    cursor: pointer;
-    user-select: none;
-
-    padding-left: 15px;
-
-    font-size: 15px;
-    line-height: 1;
 }

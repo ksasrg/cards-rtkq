@@ -1,12 +1,13 @@
+import { ComponentPropsWithoutRef } from 'react'
+
 import s from './checkbox.module.scss'
 
-export const Checkbox = () => (
-  <form>
-    <div style={{ display: 'flex', alignItems: 'center' }}>
-      <input type="checkbox" id="c1" className={s.CheckboxRoot} />
-      <label className={s.Label} htmlFor="c1">
-        Accept terms and conditions.
-      </label>
-    </div>
-  </form>
-)
+type Props = {
+  checked?: boolean
+} & ComponentPropsWithoutRef<'input'>
+
+export const Checkbox = (props: Props) => {
+  const { className, ...restProps } = props
+
+  return <input type="checkbox" className={`${s.checkbox} ${className}`} {...restProps} />
+}
